@@ -1,14 +1,10 @@
 "use client";
 
 import { useState } from "react";
-
-const WHATSAPP_NUMBER = "+2310000000";
-const WHATSAPP_MESSAGE = "Hello Terry! I would like to connect with you.";
+import { CONTACT } from "../config";
 
 export default function WhatsAppWidget() {
   const [isOpen, setIsOpen] = useState(false);
-
-  const whatsappLink = `https://wa.me/${WHATSAPP_NUMBER.replace(/\+/g, "")}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
 
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-4">
@@ -31,7 +27,7 @@ export default function WhatsAppWidget() {
       <div className="flex items-center gap-2">
         {/* Let's Talk pill - only visible when open */}
         <a
-          href={whatsappLink}
+          href={CONTACT.whatsapp.link}
           target="_blank"
           rel="noopener noreferrer"
           className={`flex items-center gap-2 bg-[#25D366] text-white px-5 h-14 rounded-full font-medium text-sm hover:bg-[#20BD5A] transition-all duration-300 ${
