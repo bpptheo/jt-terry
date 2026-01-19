@@ -37,12 +37,6 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             {/* Left - Text Content */}
             <div className="order-2 lg:order-1">
-              <div className="opacity-0 animate-fade-in-up">
-                <p className="text-sunny-yellow font-semibold text-sm tracking-widest uppercase mb-4">
-                  Welcome to my Portfolio
-                </p>
-              </div>
-
               <h1 className="opacity-0 animate-fade-in-up animation-delay-200 text-5xl md:text-6xl lg:text-7xl font-bold text-deep-blue leading-[1.1] tracking-tight">
                 I am Terry
                 <br />
@@ -65,8 +59,8 @@ export default function Home() {
               </h1>
 
               <p className="opacity-0 animate-fade-in-up animation-delay-400 text-deep-blue/60 text-lg md:text-xl mt-8 max-w-md leading-relaxed">
-                Creating meaningful experiences through design and technology.
-                Based in Ghana, working globally.
+                Professional housekeeper and real estate agent.
+                Based in Accra, Ghana, serving clients with excellence.
               </p>
 
               <div className="opacity-0 animate-fade-in-up animation-delay-600 flex flex-wrap gap-4 mt-10">
@@ -95,7 +89,7 @@ export default function Home() {
                 </div>
                 <div>
                   <p className="text-3xl font-bold text-deep-blue">50+</p>
-                  <p className="text-deep-blue/50 text-sm mt-1">Projects Done</p>
+                  <p className="text-deep-blue/50 text-sm mt-1">Properties Managed</p>
                 </div>
                 <div>
                   <p className="text-3xl font-bold text-deep-blue">30+</p>
@@ -106,24 +100,24 @@ export default function Home() {
 
             {/* Right - Image */}
             <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
-              <div className="relative">
+              <div className="relative w-72 h-72 md:w-96 md:h-96">
                 {/* Background decorative elements */}
-                <div className="absolute -top-6 -right-6 w-72 h-72 md:w-96 md:h-96 bg-sunny-yellow/20 rounded-[60px] rotate-6"></div>
-                <div className="absolute -bottom-6 -left-6 w-72 h-72 md:w-96 md:h-96 bg-deep-blue/10 rounded-[60px] -rotate-6"></div>
+                <div className="absolute -top-6 -right-6 w-full h-full bg-sunny-yellow/60 rounded-[60px] rotate-6"></div>
+                <div className="absolute -bottom-6 -left-6 w-full h-full bg-deep-blue/50 rounded-[60px] -rotate-6"></div>
 
                 {/* Main image container */}
-                <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-[50px] overflow-hidden shadow-2xl">
+                <div className="absolute inset-0 overflow-hidden rounded-[50px] shadow-2xl z-10">
                   <Image
                     src="/pictures/terry_professional.jpg"
                     alt="Terry Agbenyo"
                     fill
-                    className="object-cover"
+                    className="object-cover transition-transform duration-500 hover:scale-110"
                     priority
                   />
                 </div>
 
                 {/* Floating badge */}
-                <div className="absolute -bottom-4 -left-4 bg-white px-5 py-3 rounded-2xl shadow-xl">
+                <div className="absolute -bottom-4 -left-4 bg-white px-5 py-3 rounded-2xl shadow-xl z-20">
                   <div className="flex items-center gap-3">
                     <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
                     <span className="text-deep-blue font-medium text-sm">Available for work</span>
@@ -143,12 +137,12 @@ export default function Home() {
               About Me
             </p>
             <h2 className="text-3xl md:text-4xl font-bold text-deep-blue leading-tight">
-              Passionate about creating impactful solutions that make a difference.
+              Dedicated to providing exceptional housekeeping and real estate services.
             </h2>
             <p className="text-deep-blue/60 text-lg mt-6 leading-relaxed">
-              With over 5 years of experience, I specialize in bringing ideas to life through
-              thoughtful design and modern technology. I believe in the power of collaboration
-              and always strive to exceed expectations.
+              With years of experience in property management and real estate, I help clients
+              find their perfect home and keep properties in pristine condition. Your satisfaction
+              is my priority.
             </p>
           </div>
         </div>
