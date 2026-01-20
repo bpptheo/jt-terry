@@ -101,7 +101,7 @@ export default function Home() {
                 <div className="absolute inset-0 overflow-hidden rounded-[50px] shadow-2xl z-10">
                   <Image
                     src="/pictures/terry_professional.jpg"
-                    alt="Terry Agbenyo"
+                    alt="Terry Agbenyo - Real Estate and Property Management Professional in Accra, Ghana"
                     fill
                     className="object-cover transition-transform duration-500 hover:scale-110"
                     priority
@@ -122,15 +122,16 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="pt-20 pb-20 bg-sunny-yellow/70">
+      <section id="services" className="pt-20 pb-20 bg-sunny-yellow/70" aria-labelledby="services-heading">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
+          <h2 id="services-heading" className="sr-only">Services</h2>
           <div className="grid md:grid-cols-3 gap-8 -mt-36">
             {/* Card 1 - Real Estate */}
             <div className="bg-white rounded-3xl rounded-br-xl p-4 shadow-2xl hover:shadow-3xl transition-shadow ring-1 ring-deep-blue/20 border border-deep-blue/90">
               <div className="w-full h-48 bg-cream rounded-2xl rounded-br-lg overflow-hidden relative mb-6">
                 <Image
                   src="/properties/prop1.jpg"
-                  alt="Real Estate"
+                  alt="Modern property in Accra - Real Estate services by Terry Agbenyo"
                   fill
                   className="object-cover"
                 />
@@ -146,7 +147,7 @@ export default function Home() {
               <div className="w-full h-48 bg-cream rounded-2xl rounded-br-lg overflow-hidden relative mb-6">
                 <Image
                   src="/pictures/cleaning.png"
-                  alt="House Keeping & Cleaning"
+                  alt="Professional housekeeping and cleaning services in Ghana"
                   fill
                   className="object-cover"
                 />
@@ -162,7 +163,7 @@ export default function Home() {
               <div className="w-full h-48 bg-cream rounded-2xl rounded-br-lg overflow-hidden relative mb-6">
                 <Image
                   src="/pictures/tourguide.jpg"
-                  alt="Tourguide"
+                  alt="Guided tours in Ghana - Explore Accra with a local expert"
                   fill
                   className="object-cover"
                 />
@@ -202,7 +203,7 @@ export default function Home() {
                   <div className="bg-cream rounded-2xl overflow-hidden aspect-[3/4] relative">
                     <Image
                       src="/pictures/mtn.jpg"
-                      alt="MTN Ghana"
+                      alt="Terry Agbenyo as MTN Ghana Fiberoptic Technician since 2016"
                       fill
                       className="object-cover"
                     />
@@ -230,7 +231,7 @@ export default function Home() {
                   <div className="bg-cream rounded-2xl overflow-hidden aspect-[4/3] relative">
                     <Image
                       src="/properties/prop4.jpg"
-                      alt="Airbnb Management"
+                      alt="Airbnb property managed by Terry Agbenyo in Accra"
                       fill
                       className="object-cover"
                     />
@@ -258,7 +259,7 @@ export default function Home() {
                   <div className="bg-cream rounded-2xl overflow-hidden aspect-[4/3] relative">
                     <Image
                       src="/properties/prop2.jpg"
-                      alt="Real Estate Ghana"
+                      alt="Property for sale in Accra - Ghana real estate market"
                       fill
                       className="object-cover"
                     />
@@ -286,7 +287,7 @@ export default function Home() {
                   <div className="bg-cream rounded-2xl overflow-hidden aspect-[4/3] relative">
                     <Image
                       src="/properties/prop3.jpg"
-                      alt="Housekeeping Excellence"
+                      alt="Property maintenance and housekeeping services in Accra"
                       fill
                       className="object-cover"
                     />
