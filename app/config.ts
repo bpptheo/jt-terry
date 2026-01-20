@@ -13,7 +13,7 @@ export const CONTACT = {
     },
   },
   email: {
-    address: "hello@terryagbenyo.com",
+    address: "jtproperties2495@gmail.com",
     get link() {
       return `mailto:${this.address}`;
     },

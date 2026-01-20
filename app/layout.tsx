@@ -94,7 +94,7 @@ export default function RootLayout({
     url: siteUrl,
     image: `${siteUrl}/pictures/terry_professional.jpg`,
     telephone: "+233540685779",
-    email: "hello@terryagbenyo.com",
+    email: "jtproperties2495@gmail.com",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Accra",
