@@ -29,7 +29,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             {/* Left - Text Content */}
-            <div className="order-2 lg:order-1">
+            <div className="order-2 lg:order-1 text-center lg:text-left">
               <h1 className="opacity-0 animate-fade-in-up animation-delay-200 text-5xl md:text-6xl lg:text-7xl font-bold text-deep-blue leading-[1.1] tracking-tight">
                 I am Terry
                 <br />
@@ -51,14 +51,13 @@ export default function Home() {
                 </span>
               </h1>
 
-              <p className="opacity-0 animate-fade-in-up animation-delay-400 text-deep-blue/60 text-lg md:text-xl mt-8 max-w-md leading-relaxed">
-                Professional housekeeper and real estate agent.
-                Based in Accra, Ghana, serving clients with excellence.
+              <p className="opacity-0 animate-fade-in-up animation-delay-400 text-deep-blue/70 text-lg md:text-xl mt-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                Terry Agbenyo is a trusted real estate and property management professional in Accra, offering end-to-end solutions across the entire property lifecycle. From construction and interior finishing to sales, rentals, Airbnb management, and cleaning services, every detail is expertly handled under one roof.
               </p>
 
-              <div className="opacity-0 animate-fade-in-up animation-delay-600 flex flex-wrap gap-4 mt-10">
+              <div className="opacity-0 animate-fade-in-up animation-delay-600 flex flex-wrap justify-center lg:justify-start gap-4 mt-10">
                 <a
-                  href="#about"
+                  href="#services"
                   className="inline-flex items-center gap-2 bg-sunny-yellow/75 text-deep-blue px-7 py-4 rounded-full font-semibold hover:bg-sunny-yellow transition-all hover:shadow-lg hover:shadow-sunny-yellow/25"
                 >
                   What I Do
@@ -75,18 +74,18 @@ export default function Home() {
               </div>
 
               {/* Stats */}
-              <div className="flex gap-12 mt-16 pt-8 border-t border-deep-blue/10">
+              <div className="flex justify-center lg:justify-start gap-12 mt-16 pt-8 border-t border-deep-blue/10">
                 <div>
-                  <p className="text-3xl font-bold text-deep-blue">5+</p>
+                  <p className="text-3xl font-bold text-deep-blue">10+</p>
                   <p className="text-deep-blue/50 text-sm mt-1">Years Experience</p>
                 </div>
                 <div>
-                  <p className="text-3xl font-bold text-deep-blue">50+</p>
+                  <p className="text-3xl font-bold text-deep-blue">20+</p>
                   <p className="text-deep-blue/50 text-sm mt-1">Properties Managed</p>
                 </div>
                 <div>
-                  <p className="text-3xl font-bold text-deep-blue">30+</p>
-                  <p className="text-deep-blue/50 text-sm mt-1">Happy Clients</p>
+                  <p className="text-3xl font-bold text-deep-blue">7+</p>
+                  <p className="text-deep-blue/50 text-sm mt-1">Airbnbs Managed</p>
                 </div>
               </div>
             </div>
@@ -123,14 +122,14 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="about" className="pt-20 pb-20 bg-sunny-yellow/70">
+      <section id="services" className="pt-20 pb-20 bg-sunny-yellow/70">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="grid md:grid-cols-3 gap-8 -mt-36">
             {/* Card 1 - Real Estate */}
             <div className="bg-white rounded-3xl rounded-br-xl p-4 shadow-2xl hover:shadow-3xl transition-shadow ring-1 ring-deep-blue/20 border border-deep-blue/90">
               <div className="w-full h-48 bg-cream rounded-2xl rounded-br-lg overflow-hidden relative mb-6">
                 <Image
-                  src="/pictures/house1.jpg"
+                  src="/properties/prop1.jpg"
                   alt="Real Estate"
                   fill
                   className="object-cover"
@@ -138,7 +137,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-bold text-deep-blue mb-3 px-4">Real Estate</h3>
               <p className="text-deep-blue/60 leading-relaxed px-4 pb-4">
-                Find your dream property in Accra. I help buyers and sellers navigate the real estate market with ease.
+                I help property owners and investors build, maintain, and profit from high-quality real estate through strategic planning, hands-on management, and uncompromising standards.
               </p>
             </div>
 
@@ -178,7 +177,7 @@ export default function Home() {
       </section>
 
       {/* Timeline Section */}
-      <section className="py-20 bg-white">
+      <section id="about" className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-6 lg:px-12">
           <h2 className="text-3xl md:text-4xl font-bold text-deep-blue text-center mb-16">
             My Journey
@@ -196,7 +195,7 @@ export default function Home() {
               {/* Timeline dot with year */}
               <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 flex-col items-center z-10">
                 <div className="w-4 h-4 rounded-full bg-sunny-yellow border-4 border-white shadow-lg"></div>
-                <span className="mt-2 text-xs font-bold text-sunny-yellow bg-white px-2 py-1 rounded-full shadow">2018</span>
+                <span className="mt-2 text-xs font-bold text-sunny-yellow bg-white px-2 py-1 rounded-full shadow">2016</span>
               </div>
               <div className="w-full md:w-1/2 animate-fade-in-up">
                 <div className="relative bg-sunny-yellow/20 rounded-3xl p-4 rotate-2 hover:rotate-0 transition-transform duration-500">
@@ -211,7 +210,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="w-full md:w-1/2 text-center md:text-left">
-                <span className="text-sunny-yellow font-semibold text-sm tracking-widest uppercase">Fiberoptic Technician & Realtor</span>
+                <span className="text-sunny-yellow/90 font-semibold text-sm tracking-widest uppercase">Fiberoptic Technician & Realtor</span>
                 <h3 className="text-2xl font-bold text-deep-blue mt-2 mb-4">MTN Fiberoptic and Realtor</h3>
                 <p className="text-deep-blue/60 leading-relaxed">
                   Experienced fiberoptic technician at MTN Ghana, installing and maintaining high-speed network infrastructure.
@@ -219,7 +218,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Timeline Item 2 - Real Estate */}
+            {/* Timeline Item 2 - Airbnb */}
             <div className="group flex flex-col md:flex-row-reverse items-center gap-8 md:gap-24 relative">
               {/* Timeline dot with year */}
               <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 flex-col items-center z-10">
@@ -227,38 +226,10 @@ export default function Home() {
                 <span className="mt-2 text-xs font-bold text-sunny-yellow bg-white px-2 py-1 rounded-full shadow">2020</span>
               </div>
               <div className="w-full md:w-1/2 animate-fade-in-up">
-                <div className="relative bg-deep-blue/20 rounded-3xl p-4 -rotate-2 hover:rotate-0 transition-transform duration-500">
+                <div className="relative bg-[#FF5A5F]/30 rounded-3xl p-4 -rotate-2 hover:rotate-0 transition-transform duration-500">
                   <div className="bg-cream rounded-2xl overflow-hidden aspect-[4/3] relative">
                     <Image
-                      src="/pictures/house2.jpg"
-                      alt="Real Estate Ghana"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="w-full md:w-1/2 text-center md:text-right">
-                <span className="text-sunny-yellow font-semibold text-sm tracking-widest uppercase">Real Estate</span>
-                <h3 className="text-2xl font-bold text-deep-blue mt-2 mb-4">Property Sales in Accra</h3>
-                <p className="text-deep-blue/60 leading-relaxed">
-                  Helping clients find their dream homes in Ghana. From apartments to family houses, I connect people with the perfect property.
-                </p>
-              </div>
-            </div>
-
-            {/* Timeline Item 3 - Airbnb */}
-            <div className="group flex flex-col md:flex-row items-center gap-8 md:gap-24 relative">
-              {/* Timeline dot with year */}
-              <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 flex-col items-center z-10">
-                <div className="w-4 h-4 rounded-full bg-sunny-yellow border-4 border-white shadow-lg"></div>
-                <span className="mt-2 text-xs font-bold text-sunny-yellow bg-white px-2 py-1 rounded-full shadow">2022</span>
-              </div>
-              <div className="w-full md:w-1/2 animate-fade-in-up">
-                <div className="relative bg-[#FF5A5F]/30 rounded-3xl p-4 rotate-2 hover:rotate-0 transition-transform duration-500">
-                  <div className="bg-cream rounded-2xl overflow-hidden aspect-[4/3] relative">
-                    <Image
-                      src="/pictures/apartment.jpg"
+                      src="/properties/prop4.jpg"
                       alt="Airbnb Management"
                       fill
                       className="object-cover"
@@ -266,11 +237,39 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="w-full md:w-1/2 text-center md:text-left">
-                <span className="text-sunny-yellow font-semibold text-sm tracking-widest uppercase">Hospitality</span>
+              <div className="w-full md:w-1/2 text-center md:text-right">
+                <span className="text-[#FF5A5F] font-semibold text-sm tracking-widest uppercase">Hospitality</span>
                 <h3 className="text-2xl font-bold text-deep-blue mt-2 mb-4">Airbnb Management</h3>
                 <p className="text-deep-blue/60 leading-relaxed">
                   Full-service Airbnb management for property owners. From guest relations to cleaning, I ensure every stay is exceptional.
+                </p>
+              </div>
+            </div>
+
+            {/* Timeline Item 3 - Real Estate */}
+            <div className="group flex flex-col md:flex-row items-center gap-8 md:gap-24 relative">
+              {/* Timeline dot with year */}
+              <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 flex-col items-center z-10">
+                <div className="w-4 h-4 rounded-full bg-sunny-yellow border-4 border-white shadow-lg"></div>
+                <span className="mt-2 text-xs font-bold text-sunny-yellow bg-white px-2 py-1 rounded-full shadow">2021</span>
+              </div>
+              <div className="w-full md:w-1/2 animate-fade-in-up">
+                <div className="relative bg-deep-blue/20 rounded-3xl p-4 rotate-2 hover:rotate-0 transition-transform duration-500">
+                  <div className="bg-cream rounded-2xl overflow-hidden aspect-[4/3] relative">
+                    <Image
+                      src="/properties/prop2.jpg"
+                      alt="Real Estate Ghana"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="w-full md:w-1/2 text-center md:text-left">
+                <span className="text-deep-blue/80 font-semibold text-sm tracking-widest uppercase">Real Estate</span>
+                <h3 className="text-2xl font-bold text-deep-blue mt-2 mb-4">Property Sales in Accra</h3>
+                <p className="text-deep-blue/60 leading-relaxed">
+                  Helping clients find their dream homes in Ghana. From apartments to family houses, I connect people with the perfect property.
                 </p>
               </div>
             </div>
@@ -283,20 +282,22 @@ export default function Home() {
                 <span className="mt-2 text-xs font-bold text-sunny-yellow bg-white px-2 py-1 rounded-full shadow">2024</span>
               </div>
               <div className="w-full md:w-1/2 animate-fade-in-up">
-                <div className="relative bg-deep-blue/20 rounded-3xl p-4 -rotate-2 hover:rotate-0 transition-transform duration-500">
-                  <div className="bg-cream rounded-2xl overflow-hidden aspect-[4/3] flex items-center justify-center">
-                    {/* Replace with: <Image src="/pictures/cleaning.jpg" ... /> */}
-                    <svg className="w-24 h-24 text-deep-blue/20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-                    </svg>
+                <div className="relative bg-emerald-500/30 rounded-3xl p-4 -rotate-2 hover:rotate-0 transition-transform duration-500">
+                  <div className="bg-cream rounded-2xl overflow-hidden aspect-[4/3] relative">
+                    <Image
+                      src="/properties/prop3.jpg"
+                      alt="Housekeeping Excellence"
+                      fill
+                      className="object-cover"
+                    />
                   </div>
                 </div>
               </div>
               <div className="w-full md:w-1/2 text-center md:text-right">
-                <span className="text-sunny-yellow font-semibold text-sm tracking-widest uppercase">Professional Service</span>
+                <span className="text-emerald-600 font-semibold text-sm tracking-widest uppercase">Professional Service</span>
                 <h3 className="text-2xl font-bold text-deep-blue mt-2 mb-4">Housekeeping Excellence</h3>
                 <p className="text-deep-blue/60 leading-relaxed">
-                  Thorough, reliable cleaning services for homes and offices. Attention to detail and commitment to cleanliness you can count on.
+                  Professional property care — from cleaning and maintenance to security checks and preventive repairs. Peace of mind for property owners.
                 </p>
               </div>
             </div>
