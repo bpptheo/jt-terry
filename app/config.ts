@@ -1,6 +1,6 @@
 export const CONTACT = {
   whatsapp: {
-    number: "+2310000000",
+    number: "+233540685779",
     message: "Hello Terry! I would like to connect with you.",
     get link() {
       return `https://wa.me/${this.number.replace(/\+/g, "")}?text=${encodeURIComponent(this.message)}`;
